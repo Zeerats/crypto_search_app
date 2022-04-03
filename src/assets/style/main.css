@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #34343d;
+}
+#app {
+  font-family: Montserrat, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #222133;
+  width: 100vw;
+  overflow-x:hidden;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.column {
+    animation: 1s ease-out 0s 1 fadeIn;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    width: 500px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px 20px;
+}
+.info {
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: rgb(147, 188, 190);
+    box-shadow: 10px 10px 10px;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.button {
+    display: inline-block; 
+    width: 240px; 
+    box-sizing: border-box;
+    margin-top: 20px;
+    cursor: pointer;
+    transition-duration: 200ms;
+    border-radius: 10px;
+    user-select: none;
+    box-shadow: 10px 10px 10px;
+}
+.button h2 {
+    color: white;
+}
+.button.green {
+    background-color: rgb(9, 209, 143);
+}
+.button.green:hover {
+    background-color: rgb(7, 148, 101);
+    transition-duration: 200ms;
+}
+.button.red {
+    background-color: rgb(212, 20, 84);
+    transition-duration: 200ms;
+}
+.button.red:hover {
+    background-color: rgb(151, 14, 60);
+    transition-duration: 200ms;
+}
+.title {
+    text-align: left;
+    padding: 0 40px;
+    margin-top: 40px;
+    color: rgba(0, 0, 0, .5);
+    font-weight: 400;
+}
+.asset {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: center;
+    padding: 0 40px;
+}
+.coin-info {
+    margin-top: 20px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+}
+/* TERRIBLE SOLUTION... */
+ .asset h2, .asset h4 {
+    margin: 0;
+ }
+ .input-field {
+    inset: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    margin-top: 10px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+}
+ @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
